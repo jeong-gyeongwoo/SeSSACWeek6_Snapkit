@@ -13,6 +13,7 @@
 		F40A74AA2A930A0B00A14750 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F40A74A82A930A0B00A14750 /* Main.storyboard */; };
 		F40A74AC2A930A0B00A14750 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F40A74AB2A930A0B00A14750 /* Assets.xcassets */; };
 		F40A74AF2A930A0B00A14750 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F40A74AD2A930A0B00A14750 /* LaunchScreen.storyboard */; };
+		F44D9E142A965318007A1E9D /* MovieLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44D9E132A965317007A1E9D /* MovieLocationViewController.swift */; };
 		F4576C032A9446200087993D /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F4576C022A9446200087993D /* SnapKit */; };
 		F4576C062A9446700087993D /* SnapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4576C052A9446700087993D /* SnapViewController.swift */; };
 		F4576C082A945CB40087993D /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4576C072A945CB40087993D /* TextViewController.swift */; };
@@ -30,6 +31,8 @@
 		F40A74AB2A930A0B00A14750 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F40A74AE2A930A0B00A14750 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F40A74B02A930A0B00A14750 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F44D9E112A95C4B4007A1E9D /* SeSSACWeek6.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = SeSSACWeek6.entitlements; sourceTree = "<group>"; };
+		F44D9E132A965317007A1E9D /* MovieLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieLocationViewController.swift; sourceTree = "<group>"; };
 		F4576C052A9446700087993D /* SnapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapViewController.swift; sourceTree = "<group>"; };
 		F4576C072A945CB40087993D /* TextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
 		F4576C092A94792E0087993D /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +71,8 @@
 		F40A74A12A930A0B00A14750 /* SeSSACWeek6 */ = {
 			isa = PBXGroup;
 			children = (
+				F44D9E122A9652D7007A1E9D /* Location */,
+				F44D9E112A95C4B4007A1E9D /* SeSSACWeek6.entitlements */,
 				F4576C0B2A94C2BD0087993D /* Example */,
 				F4576C042A9446470087993D /* Test */,
 				F40A74A22A930A0B00A14750 /* AppDelegate.swift */,
@@ -80,6 +85,14 @@
 				F4576C092A94792E0087993D /* LocationViewController.swift */,
 			);
 			path = SeSSACWeek6;
+			sourceTree = "<group>";
+		};
+		F44D9E122A9652D7007A1E9D /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				F44D9E132A965317007A1E9D /* MovieLocationViewController.swift */,
+			);
+			path = Location;
 			sourceTree = "<group>";
 		};
 		F4576C042A9446470087993D /* Test */ = {
@@ -178,6 +191,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4576C0F2A94C2E70087993D /* EX2ViewController.swift in Sources */,
+				F44D9E142A965318007A1E9D /* MovieLocationViewController.swift in Sources */,
 				F4576C082A945CB40087993D /* TextViewController.swift in Sources */,
 				F4576C062A9446700087993D /* SnapViewController.swift in Sources */,
 				F40A74A72A930A0B00A14750 /* ViewController.swift in Sources */,
@@ -329,10 +343,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SeSSACWeek6/SeSSACWeek6.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SeSSACWeek6/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "요청사유를 적는곳";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -343,7 +359,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Jeong.SeSSACWeek6;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Jeong.SeSSACWeek6-3";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -356,10 +372,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SeSSACWeek6/SeSSACWeek6.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SeSSACWeek6/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "요청사유를 적는곳";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -370,7 +388,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Jeong.SeSSACWeek6;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Jeong.SeSSACWeek6-3";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

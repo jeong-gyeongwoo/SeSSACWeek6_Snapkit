@@ -80,15 +80,16 @@ class ViewController: UIViewController {
             signButton.widthAnchor.constraint(equalToConstant: 300),
             signButton.heightAnchor.constraint(equalToConstant: 50),
             signButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
-        
+            
         ])
     }
     
     @objc
     func singButtonClicked() {
-           // let vc = TextViewController()
-            // vc. -> 값전달 가능
-        present(EX1ViewController(), animated: true)
+        let vc = LocationViewController()
+        // vc. -> 값전달 가능
+        //let nav = UINavigationController(rootViewController: vc)
+        present(vc, animated: true)
         
     }
     
