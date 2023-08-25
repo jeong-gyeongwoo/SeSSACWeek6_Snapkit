@@ -10,34 +10,69 @@
 		F40A74A32A930A0B00A14750 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40A74A22A930A0B00A14750 /* AppDelegate.swift */; };
 		F40A74A52A930A0B00A14750 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40A74A42A930A0B00A14750 /* SceneDelegate.swift */; };
 		F40A74A72A930A0B00A14750 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40A74A62A930A0B00A14750 /* ViewController.swift */; };
-		F40A74AA2A930A0B00A14750 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F40A74A82A930A0B00A14750 /* Main.storyboard */; };
 		F40A74AC2A930A0B00A14750 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F40A74AB2A930A0B00A14750 /* Assets.xcassets */; };
 		F40A74AF2A930A0B00A14750 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F40A74AD2A930A0B00A14750 /* LaunchScreen.storyboard */; };
+		F428F7522A971CE800B909D4 /* CustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F428F7512A971CE800B909D4 /* CustomViewController.swift */; };
+		F428F7542A971EA700B909D4 /* BlackRadiusTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F428F7532A971EA700B909D4 /* BlackRadiusTextField.swift */; };
+		F428F7562A972A2700B909D4 /* CustomTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F428F7552A972A2700B909D4 /* CustomTableViewController.swift */; };
+		F428F75D2A97513B00B909D4 /* NetfilxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F428F75C2A97513B00B909D4 /* NetfilxViewController.swift */; };
+		F428F75F2A97682300B909D4 /* NetflixTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F428F75E2A97682300B909D4 /* NetflixTextField.swift */; };
+		F428F7632A978AEE00B909D4 /* NetfilxLobbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F428F7622A978AEE00B909D4 /* NetfilxLobbyViewController.swift */; };
 		F44D9E142A965318007A1E9D /* MovieLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44D9E132A965317007A1E9D /* MovieLocationViewController.swift */; };
-		F4576C032A9446200087993D /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F4576C022A9446200087993D /* SnapKit */; };
+		F44ED4402A982B0300484680 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44ED43F2A982B0300484680 /* CustomTableViewCell.swift */; };
+		F44ED4422A9840B900484680 /* PosterImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44ED4412A9840B900484680 /* PosterImageView.swift */; };
+		F44ED4452A984B5400484680 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44ED4442A984B5400484680 /* OnboardingViewController.swift */; };
 		F4576C062A9446700087993D /* SnapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4576C052A9446700087993D /* SnapViewController.swift */; };
 		F4576C082A945CB40087993D /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4576C072A945CB40087993D /* TextViewController.swift */; };
 		F4576C0A2A94792E0087993D /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4576C092A94792E0087993D /* LocationViewController.swift */; };
 		F4576C0D2A94C2D20087993D /* EX1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4576C0C2A94C2D20087993D /* EX1ViewController.swift */; };
 		F4576C0F2A94C2E70087993D /* EX2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4576C0E2A94C2E70087993D /* EX2ViewController.swift */; };
+		F4A2E0962A96F11500F8D46A /* GenericViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A2E0952A96F11500F8D46A /* GenericViewController.swift */; };
+		F4A2E0982A96F13B00F8D46A /* Extension+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A2E0972A96F13B00F8D46A /* Extension+UIViewController.swift */; };
+		F4A2E09D2A96FE7600F8D46A /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F4A2E09C2A96FE7600F8D46A /* SnapKit */; };
+		F4CB77AB2A9898A4002D4553 /* NetflixMovieImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CB77AA2A9898A4002D4553 /* NetflixMovieImageView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		F428F74F2A97134300B909D4 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = pattern.proxy;
+			inputFiles = (
+			);
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "# Type a script or drag a script file from your workspace to insert its path.\n";
+		};
+/* End PBXBuildRule section */
 
 /* Begin PBXFileReference section */
 		F40A749F2A930A0B00A14750 /* SeSSACWeek6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeSSACWeek6.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F40A74A22A930A0B00A14750 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F40A74A42A930A0B00A14750 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F40A74A62A930A0B00A14750 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F40A74A92A930A0B00A14750 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F40A74AB2A930A0B00A14750 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F40A74AE2A930A0B00A14750 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F40A74B02A930A0B00A14750 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F44D9E112A95C4B4007A1E9D /* SeSSACWeek6.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = SeSSACWeek6.entitlements; sourceTree = "<group>"; };
+		F428F7512A971CE800B909D4 /* CustomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewController.swift; sourceTree = "<group>"; };
+		F428F7532A971EA700B909D4 /* BlackRadiusTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackRadiusTextField.swift; sourceTree = "<group>"; };
+		F428F7552A972A2700B909D4 /* CustomTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewController.swift; sourceTree = "<group>"; };
+		F428F75C2A97513B00B909D4 /* NetfilxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetfilxViewController.swift; sourceTree = "<group>"; };
+		F428F75E2A97682300B909D4 /* NetflixTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetflixTextField.swift; sourceTree = "<group>"; };
+		F428F7622A978AEE00B909D4 /* NetfilxLobbyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetfilxLobbyViewController.swift; sourceTree = "<group>"; };
 		F44D9E132A965317007A1E9D /* MovieLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieLocationViewController.swift; sourceTree = "<group>"; };
+		F44ED43F2A982B0300484680 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		F44ED4412A9840B900484680 /* PosterImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterImageView.swift; sourceTree = "<group>"; };
+		F44ED4442A984B5400484680 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		F4576C052A9446700087993D /* SnapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapViewController.swift; sourceTree = "<group>"; };
 		F4576C072A945CB40087993D /* TextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
 		F4576C092A94792E0087993D /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		F4576C0C2A94C2D20087993D /* EX1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EX1ViewController.swift; sourceTree = "<group>"; };
 		F4576C0E2A94C2E70087993D /* EX2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EX2ViewController.swift; sourceTree = "<group>"; };
+		F4A2E0952A96F11500F8D46A /* GenericViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericViewController.swift; sourceTree = "<group>"; };
+		F4A2E0972A96F13B00F8D46A /* Extension+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIViewController.swift"; sourceTree = "<group>"; };
+		F4CB77AA2A9898A4002D4553 /* NetflixMovieImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetflixMovieImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,7 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4576C032A9446200087993D /* SnapKit in Frameworks */,
+				F4A2E09D2A96FE7600F8D46A /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +90,10 @@
 		F40A74962A930A0B00A14750 = {
 			isa = PBXGroup;
 			children = (
+				F44ED4432A984B1300484680 /* Onboarding */,
+				F428F75B2A97510300B909D4 /* NetfilxSnapkit */,
+				F428F7502A971CAD00B909D4 /* CustomView */,
+				F4A2E0942A96F0DE00F8D46A /* Generic */,
 				F40A74A12A930A0B00A14750 /* SeSSACWeek6 */,
 				F40A74A02A930A0B00A14750 /* Products */,
 			);
@@ -72,13 +111,11 @@
 			isa = PBXGroup;
 			children = (
 				F44D9E122A9652D7007A1E9D /* Location */,
-				F44D9E112A95C4B4007A1E9D /* SeSSACWeek6.entitlements */,
 				F4576C0B2A94C2BD0087993D /* Example */,
 				F4576C042A9446470087993D /* Test */,
 				F40A74A22A930A0B00A14750 /* AppDelegate.swift */,
 				F40A74A42A930A0B00A14750 /* SceneDelegate.swift */,
 				F40A74A62A930A0B00A14750 /* ViewController.swift */,
-				F40A74A82A930A0B00A14750 /* Main.storyboard */,
 				F40A74AB2A930A0B00A14750 /* Assets.xcassets */,
 				F40A74AD2A930A0B00A14750 /* LaunchScreen.storyboard */,
 				F40A74B02A930A0B00A14750 /* Info.plist */,
@@ -87,12 +124,43 @@
 			path = SeSSACWeek6;
 			sourceTree = "<group>";
 		};
+		F428F7502A971CAD00B909D4 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				F428F7512A971CE800B909D4 /* CustomViewController.swift */,
+				F428F7532A971EA700B909D4 /* BlackRadiusTextField.swift */,
+				F428F7552A972A2700B909D4 /* CustomTableViewController.swift */,
+				F44ED43F2A982B0300484680 /* CustomTableViewCell.swift */,
+				F44ED4412A9840B900484680 /* PosterImageView.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		F428F75B2A97510300B909D4 /* NetfilxSnapkit */ = {
+			isa = PBXGroup;
+			children = (
+				F428F75C2A97513B00B909D4 /* NetfilxViewController.swift */,
+				F428F75E2A97682300B909D4 /* NetflixTextField.swift */,
+				F428F7622A978AEE00B909D4 /* NetfilxLobbyViewController.swift */,
+				F4CB77AA2A9898A4002D4553 /* NetflixMovieImageView.swift */,
+			);
+			path = NetfilxSnapkit;
+			sourceTree = "<group>";
+		};
 		F44D9E122A9652D7007A1E9D /* Location */ = {
 			isa = PBXGroup;
 			children = (
 				F44D9E132A965317007A1E9D /* MovieLocationViewController.swift */,
 			);
 			path = Location;
+			sourceTree = "<group>";
+		};
+		F44ED4432A984B1300484680 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				F44ED4442A984B5400484680 /* OnboardingViewController.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 		F4576C042A9446470087993D /* Test */ = {
@@ -113,6 +181,15 @@
 			path = Example;
 			sourceTree = "<group>";
 		};
+		F4A2E0942A96F0DE00F8D46A /* Generic */ = {
+			isa = PBXGroup;
+			children = (
+				F4A2E0952A96F11500F8D46A /* GenericViewController.swift */,
+				F4A2E0972A96F13B00F8D46A /* Extension+UIViewController.swift */,
+			);
+			path = Generic;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -125,12 +202,13 @@
 				F40A749D2A930A0B00A14750 /* Resources */,
 			);
 			buildRules = (
+				F428F74F2A97134300B909D4 /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
 			name = SeSSACWeek6;
 			packageProductDependencies = (
-				F4576C022A9446200087993D /* SnapKit */,
+				F4A2E09C2A96FE7600F8D46A /* SnapKit */,
 			);
 			productName = SeSSACWeek6;
 			productReference = F40A749F2A930A0B00A14750 /* SeSSACWeek6.app */;
@@ -161,7 +239,7 @@
 			);
 			mainGroup = F40A74962A930A0B00A14750;
 			packageReferences = (
-				F4576C012A9446200087993D /* XCRemoteSwiftPackageReference "SnapKit" */,
+				F4A2E09B2A96FE7600F8D46A /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = F40A74A02A930A0B00A14750 /* Products */;
 			projectDirPath = "";
@@ -179,7 +257,6 @@
 			files = (
 				F40A74AF2A930A0B00A14750 /* LaunchScreen.storyboard in Resources */,
 				F40A74AC2A930A0B00A14750 /* Assets.xcassets in Resources */,
-				F40A74AA2A930A0B00A14750 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,14 +267,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F44ED4402A982B0300484680 /* CustomTableViewCell.swift in Sources */,
+				F428F75D2A97513B00B909D4 /* NetfilxViewController.swift in Sources */,
+				F4CB77AB2A9898A4002D4553 /* NetflixMovieImageView.swift in Sources */,
+				F44ED4422A9840B900484680 /* PosterImageView.swift in Sources */,
 				F4576C0F2A94C2E70087993D /* EX2ViewController.swift in Sources */,
 				F44D9E142A965318007A1E9D /* MovieLocationViewController.swift in Sources */,
+				F428F7542A971EA700B909D4 /* BlackRadiusTextField.swift in Sources */,
+				F428F7632A978AEE00B909D4 /* NetfilxLobbyViewController.swift in Sources */,
+				F44ED4452A984B5400484680 /* OnboardingViewController.swift in Sources */,
+				F428F75F2A97682300B909D4 /* NetflixTextField.swift in Sources */,
+				F4A2E0962A96F11500F8D46A /* GenericViewController.swift in Sources */,
+				F428F7522A971CE800B909D4 /* CustomViewController.swift in Sources */,
 				F4576C082A945CB40087993D /* TextViewController.swift in Sources */,
 				F4576C062A9446700087993D /* SnapViewController.swift in Sources */,
 				F40A74A72A930A0B00A14750 /* ViewController.swift in Sources */,
 				F4576C0A2A94792E0087993D /* LocationViewController.swift in Sources */,
 				F40A74A32A930A0B00A14750 /* AppDelegate.swift in Sources */,
+				F4A2E0982A96F13B00F8D46A /* Extension+UIViewController.swift in Sources */,
 				F40A74A52A930A0B00A14750 /* SceneDelegate.swift in Sources */,
+				F428F7562A972A2700B909D4 /* CustomTableViewController.swift in Sources */,
 				F4576C0D2A94C2D20087993D /* EX1ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -205,14 +294,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F40A74A82A930A0B00A14750 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F40A74A92A930A0B00A14750 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F40A74AD2A930A0B00A14750 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -343,15 +424,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = SeSSACWeek6/SeSSACWeek6.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SeSSACWeek6/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "카메라 권한 요청 문구";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "요청사유를 적는곳";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -359,7 +439,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Jeong.SeSSACWeek6-3";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Jeong.SeSSACWeek6-31";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -372,15 +452,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = SeSSACWeek6/SeSSACWeek6.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SeSSACWeek6/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "카메라 권한 요청 문구";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "요청사유를 적는곳";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -388,7 +467,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Jeong.SeSSACWeek6-3";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Jeong.SeSSACWeek6-31";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -420,7 +499,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		F4576C012A9446200087993D /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+		F4A2E09B2A96FE7600F8D46A /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
 			requirement = {
@@ -431,9 +510,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		F4576C022A9446200087993D /* SnapKit */ = {
+		F4A2E09C2A96FE7600F8D46A /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = F4576C012A9446200087993D /* XCRemoteSwiftPackageReference "SnapKit" */;
+			package = F4A2E09B2A96FE7600F8D46A /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */

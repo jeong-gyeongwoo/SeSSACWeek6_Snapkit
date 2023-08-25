@@ -74,19 +74,17 @@ class LocationViewController: UIViewController {
         
         let annotaion1 = MKPointAnnotation()
         annotaion1.coordinate = CLLocationCoordinate2D(latitude: 37.517857, longitude: 126.886714 )
-        
-        mapView.removeAnnotation(annotaion1)
-        
+       // mapView.removeAnnotation(annotaion1)
         
         let annotaion2 = MKPointAnnotation()
         annotaion2.coordinate = CLLocationCoordinate2D(latitude: 37.517746, longitude: 126.887131 )
-        
-        mapView.addAnnotations([annotaion2])
+       // mapView.addAnnotations([annotaion2])
         
         if type == 0 { //viewDidLoad
             mapView.addAnnotations([annotaion1, annotaion2])
         } else if type == 1 {
-            
+        //type == 0의[annotaion1,]과 다름, scope
+          //mapView.removeAnnotation(annotaion1)
             mapView.removeAnnotations(mapView.annotations)
             mapView.addAnnotations([annotaion2])
         }

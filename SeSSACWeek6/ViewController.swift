@@ -86,10 +86,7 @@ class ViewController: UIViewController {
     
     @objc
     func singButtonClicked() {
-        let vc = LocationViewController()
-        // vc. -> 값전달 가능
-        //let nav = UINavigationController(rootViewController: vc)
-        present(vc, animated: true)
+        transition(viewController: GenericViewController.self, storyboard: "Main", style: .presentNavigation)
         
     }
     
