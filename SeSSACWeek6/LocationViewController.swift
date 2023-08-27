@@ -53,7 +53,7 @@ class LocationViewController: UIViewController {
         //info.plist << 얼럿
         //locationManager.requestWhenInUseAuthorization()
         
-        
+        //프로토콜에서 호출해주지만 nav나 present하면 안 뜰수도 있음, 여기서 꼭 호출해주기
         checkDeviceLocationAuthorization()
         
         let center = CLLocationCoordinate2D(latitude: 37.517829, longitude: 126.886270)
@@ -62,8 +62,7 @@ class LocationViewController: UIViewController {
         
     }
     
-    @objc
-    func cafeButtonClicked() {
+    @objc func cafeButtonClicked() {
         setAnnotaion(type: 1)
         print("====")
     }
@@ -159,7 +158,7 @@ class LocationViewController: UIViewController {
         case .notDetermined:
             //업뎃 정확도
             locationManager.desiredAccuracy = kCLLocationAccuracyBest
-            //요청얼럿, infoplist에서 얼럿에 대한 설정을 미리 해야함
+            //요청얼럿, infoplist에서 wheninuse 설정을 미리 해야함
             locationManager.requestWhenInUseAuthorization()
         case .restricted:
             print("restricted")
@@ -204,6 +203,7 @@ extension LocationViewController: CLLocationManagerDelegate {
         
     }
     
+    //프로토콜 디폴트 메서드, 사용자가 클릭을 하면 애플이 자동으로 호출해줌.
     //사용자의 권한 상태가 바뀔 때를 알려줌
     //거부했다가 설정에서 변경을 했거나, 혹은 notDertermined상태에서 허용을 했거나
     //허용해서 위치를 가지고 오는 도중에, 설정에서 거부를 하고 앱으로 다시 돌아올 때 등
@@ -223,10 +223,11 @@ extension LocationViewController: CLLocationManagerDelegate {
 }
 
 extension LocationViewController: MKMapViewDelegate {
+    //지도를 움직이다가 멈추면 호출되는 메서드
     func mapView(_ mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
         print(#function)
     }
-    
+    //지도의 요소(공간, 어노테이션 등)을 클릭을 할 때
     func mapView(_ mapView: MKMapView, didSelect annotation: MKAnnotation) {
         print(#function)
     }
